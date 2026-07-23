@@ -28,33 +28,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// ===== Intersection Observer para animaciones al hacer scroll =====
-const animatedElements = document.querySelectorAll('.service-card, .project-card, .about-text .highlight-list li');
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.animationPlayState = 'running';
-        }
-    });
-}, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -50px 0px'
-});
-
-animatedElements.forEach(el => {
-    if (el.style.animationPlayState !== 'running') {
-        el.style.animationPlayState = 'paused';
-        observer.observe(el);
-    }
-});
-
-// ===== Animar las barras de los servicios al hacer hover =====
-document.querySelectorAll('.service-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
-    });
-});
-
-console.log('🚀 Portafolio de Bastián Lazo - Landing Pages que Venden');

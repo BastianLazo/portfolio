@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafetería El Grano · Café y más</title>
+    <meta name="description" content="Cafetería El Grano: el mejor café de especialidad en un ambiente acogedor. Desayunos, brunch y pastelería artesanal." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-icon">☕</span> El<span>Grano</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto" class="nav-cta">Visítanos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-tag">☕ Café de especialidad</span>
+                <h1>El café que <span class="highlight">mereces</span>, en el lugar que <span class="highlight">amas</span></h1>
+                <p class="hero-sub">
+                    Despierta tus sentidos con nuestro café de origen único, pastelería artesanal y un ambiente que invita a quedarte.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary">📍 Ver ubicación</a>
+                    <a href="#menu" class="btn btn-outline">Ver menú →</a>
+                </div>
+                <div class="hero-badges">
+                    <span>☕ Café de especialidad</span>
+                    <span>🥐 Pastelería artesanal</span>
+                    <span>🌿 Ambiente acogedor</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-placeholder">
+                    <span>☕</span>
+                    <p>Tu café favorito, <strong>hecho con pasión</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MENÚ ===== -->
+    <section id="menu" style="background-color: #FFFFFF;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">📋 Nuestro menú</span>
+                <h2 class="section-title">Sabores que enamoran</h2>
+                <p class="section-sub">Cada producto está elaborado con ingredientes de la más alta calidad y mucho cariño.</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Café -->
+                <div class="menu-card">
+                    <div class="menu-icon">☕</div>
+                    <div class="menu-info">
+                        <h3>Café Espresso</h3>
+                        <p>Intenso y aromático, 100% arábica de origen único.</p>
+                        <span class="menu-price">$2.800</span>
+                    </div>
+                </div>
+
+                <!-- Café con leche -->
+                <div class="menu-card">
+                    <div class="menu-icon">🥛</div>
+                    <div class="menu-info">
+                        <h3>Café con Leche</h3>
+                        <p>Espresso suave con leche cremosa. Ideal para empezar el día.</p>
+                        <span class="menu-price">$3.200</span>
+                    </div>
+                </div>
+
+                <!-- Capuchino -->
+                <div class="menu-card">
+                    <div class="menu-icon">☕</div>
+                    <div class="menu-info">
+                        <h3>Capuchino</h3>
+                        <p>Espresso, leche y espuma cremosa. Un clásico irresistible.</p>
+                        <span class="menu-price">$3.500</span>
+                    </div>
+                </div>
+
+                <!-- Té -->
+                <div class="menu-card">
+                    <div class="menu-icon">🍵</div>
+                    <div class="menu-info">
+                        <h3>Té de hierbas</h3>
+                        <p>Selección de tés orgánicos: menta, manzanilla, rooibos.</p>
+                        <span class="menu-price">$2.500</span>
+                    </div>
+                </div>
+
+                <!-- Croissant -->
+                <div class="menu-card">
+                    <div class="menu-icon">🥐</div>
+                    <div class="menu-info">
+                        <h3>Croissant Artesanal</h3>
+                        <p>Hojaldre crujiente, mantequilla francesa y textura perfecta.</p>
+                        <span class="menu-price">$2.900</span>
+                    </div>
+                </div>
+
+                <!-- Torta -->
+                <div class="menu-card">
+                    <div class="menu-icon">🍰</div>
+                    <div class="menu-info">
+                        <h3>Torta de Chocolate</h3>
+                        <p>Bizcocho húmedo con ganache de chocolate belga.</p>
+                        <span class="menu-price">$3.800</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE NOSOTROS ===== -->
+    <section id="nosotros">
+        <div class="container about-wrapper">
+            <div class="about-text">
+                <span class="section-label">📖 Nuestra historia</span>
+                <h2>Más que café, una experiencia</h2>
+                <p>
+                    El Grano nace del amor por el café de especialidad y el deseo de
+                    crear un espacio donde las personas puedan desconectarse, conversar
+                    y disfrutar de momentos únicos.
+                </p>
+                <p>
+                    Trabajamos con pequeños productores locales, tostamos nuestros
+                    granos artesanalmente y cuidamos cada detalle para ofrecerte
+                    una taza perfecta.
+                </p>
+                <div class="about-features">
+                    <span>✅ Café de origen único</span>
+                    <span>✅ Tostado artesanal</span>
+                    <span>✅ Ingredientes locales</span>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="about-icon">☕✨</div>
+                <p><strong>+1.200</strong> tazas servidas</p>
+                <p><strong>4.9</strong> ⭐ de calificación</p>
+                <p><strong>5</strong> años de historia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALERÍA ===== -->
+    <section id="galeria" style="background-color: #FFFFFF;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">🖼️ Nuestro espacio</span>
+                <h2 class="section-title">Un lugar para disfrutar</h2>
+                <p class="section-sub">Cada rincón está pensado para que te sientas como en casa.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">☕</div>
+                    <p>Nuestro rincón del café</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🥐</div>
+                    <p>Pastelería artesanal</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🌿</div>
+                    <p>Ambiente acogedor</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                    <p>Espacios para compartir</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO / UBICACIÓN ===== -->
+    <section id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">📍 Visítanos</span>
+                <h2 class="section-title">Te esperamos con una taza caliente</h2>
+                <p class="section-sub">Ven a conocernos o contáctanos para hacer tu pedido.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>📱 Contáctanos</h3>
+                    <p>Escríbenos por WhatsApp o pásate por nuestra cafetería.</p>
+                    <div class="detail">
+                        <span class="emoji">📞</span>
+                        <a href="https://wa.me/56992249556" target="_blank">+569 9224 9556</a>
+                    </div>
+                    <div class="detail">
+                        <span class="emoji">📍</span>
+                        Av. Libertad 123, Viña del Mar
+                    </div>
+                    <div class="detail">
+                        <span class="emoji">⏰</span>
+                        Lun–Dom · 8:00 AM – 9:00 PM
+                    </div>
+                    <div style="margin-top: 24px; background: #F1F5F9; padding: 16px; border-radius: var(--radius);">
+                        <p style="font-weight:700;">🎁 Promoción especial</p>
+                        <p style="color: var(--color-gray); font-size:0.9rem;">
+                            Desayuno + café por <strong>$5.900</strong> (válido hasta las 11 AM)
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <span>📍</span>
+                        <p>Av. Libertad 123</p>
+                        <p style="font-size:0.85rem; color: var(--color-gray);">Viña del Mar, Chile</p>
+                    </div>
+                    <a href="https://wa.me/56992249556?text=Hola%20El%20Grano%2C%20quiero%20hacer%20un%20pedido" 
+                       target="_blank" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:16px;">
+                        💬 Hacer pedido por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo" style="margin-bottom:8px; font-size:1.3rem;">
+                        ☕ El<span>Grano</span>
+                    </div>
+                    <p>Café de especialidad · Pastelería artesanal · Ambiente acogedor</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <a href="#menu">Menú</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#galeria">Galería</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <a href="https://wa.me/56992249556" target="_blank">WhatsApp</a>
+                    <a href="mailto:bastianlazo0933@gmail.com">Email</a>
+                    <a href="https://bastianlazo.github.io/portfolio/" target="_blank">👨‍💻 Desarrollado por Bastián Lazo</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cafetería El Grano · Hecho con ☕ por 
+                    <a href="https://bastianlazo.github.io/portfolio/" target="_blank">Bastián Lazo</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
